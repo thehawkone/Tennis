@@ -68,6 +68,16 @@ body {
   display: flex;
   gap: 40px;
 }
+.header__menu-link {
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+.header__menu-link:hover {
+  font-size: 16px;
+  font-weight: 700;
+  transform: translateY(-1px);
+}
 .header__links {
   display: flex;
   gap: 20px;

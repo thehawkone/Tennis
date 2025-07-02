@@ -41,6 +41,9 @@ $font-base: 'Gilroy', sans-serif;
   line-height: 140%;
   color: #fff;
 }
+@mixin transition($what: all, $time: 0.3s, $type: ease) {
+  transition: $what $time $type;
+}
 
 * {
   box-sizing: border-box;
@@ -71,10 +74,22 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
   &__menu {
     &-list {
       display: flex;
       gap: 40px;
+    }
+    &-link {
+      @include transition(all, 0.3s, ease);
+      display: inline-block;
+      position: relative;
+
+      &:hover {
+        font-size: 16px;
+        font-weight: 700;
+        transform: translateY(-1px);
+      }
     }
   }
   &__links {
