@@ -1,0 +1,55 @@
+$bg-color: #ffffff;
+$text-color: #333333;
+$accent-color: #8D86C9;
+$sub-accent-color: #F7ECE1;
+$font-base: 'Gilroy', sans-serif;
+
+@font-face {
+  font-family: 'Gilroy-Bold ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Bold ☞'), url('fonts/Gilroy-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Heavy ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Heavy ☞'), url('fonts/Gilroy-Heavy.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Light ☞'), url('fonts/Gilroy-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Medium ☞'), url('fonts/Gilroy-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gilroy-Regular ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Regular ☞'), url('fonts/Gilroy-Regular.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+.wrapper {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+body {
+  font-family: $font-base;
+}
