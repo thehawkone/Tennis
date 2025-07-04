@@ -48,16 +48,13 @@ body {
 }
 
 .header {
-  height: 1000px;
-  background-image: url("image/header/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-top: 30px;
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
 .header__content {
   display: flex;
@@ -88,6 +85,94 @@ body {
   width: 100%;
   height: 0;
   opacity: 0.3;
+}
+
+.hero {
+  height: 1000px;
+  background-image: url("image/main/hero/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
+.hero__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #fff;
+  padding-top: 306px;
+}
+.hero__youtube {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.hero__youtube-spoiler {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 30px;
+}
+.hero__youtube .circle__image {
+  height: 80px;
+  width: 80px;
+  transition: transform 0.3s ease;
+}
+.hero__youtube .circle__image:hover {
+  transform: scale(1.1);
+}
+.hero__blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 202px;
+}
+.hero__block {
+  position: relative;
+  width: 315px;
+  height: 151px;
+  background: #8d86c9;
+}
+.hero__block-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 35px;
+  margin-left: 35px;
+}
+.hero__block-service {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 17px;
+  margin-left: 35px;
+}
+.hero__block-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 72px;
+  margin-right: 32px;
+  transition: transform 0.3s ease;
+}
+.hero__block-icon:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=main.css.map */
