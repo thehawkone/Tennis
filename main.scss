@@ -117,15 +117,13 @@ body {
 }
 
 .hero {
-  height: 1000px;
+  margin-top: -130px;
   background-image: url('image/main/hero/background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 0;
-  left: 0;
   width: 100%;
 
   &__content {
@@ -135,7 +133,7 @@ body {
 
   &__title {
     @include title-font;
-    padding-top: 306px;
+    padding-top: 305px;
   }
 
   &__youtube {
@@ -201,6 +199,59 @@ body {
       &:hover {
         transform: scale(1.2)
       }
+    }
+  }
+}
+
+.advantages {
+  margin-top: 150px;
+
+  &__content {
+    position: relative;
+    display: flex;
+    height: 500px;
+  }
+
+  &__blocks {
+    display: flex;
+    padding-top: 25px;
+    padding-left: 19px;
+    gap: 64px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__block {
+    position: relative;
+    @include transition(all, 0.3s, ease);
+    outline: 1px solid $sub-accent-color;
+    outline-offset: 20px;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
+
+    img {
+      height: 450px;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+    }
+
+    &-title {
+      position: absolute;
+      width: 100%;
+      @include title-font;
+      text-align: center;
+      font-size: 27px;
+      padding-top: 280px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
     }
   }
 }

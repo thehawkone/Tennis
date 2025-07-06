@@ -88,15 +88,13 @@ body {
 }
 
 .hero {
-  height: 1000px;
+  margin-top: -130px;
   background-image: url("image/main/hero/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 .hero__content {
@@ -108,7 +106,7 @@ body {
   font-size: 48px;
   line-height: 140%;
   color: #fff;
-  padding-top: 306px;
+  padding-top: 305px;
 }
 .hero__youtube {
   display: flex;
@@ -173,6 +171,55 @@ body {
 }
 .hero__block-icon:hover {
   transform: scale(1.2);
+}
+
+.advantages {
+  margin-top: 150px;
+}
+.advantages__content {
+  position: relative;
+  display: flex;
+  height: 500px;
+}
+.advantages__blocks {
+  display: flex;
+  padding-top: 25px;
+  padding-left: 19px;
+  gap: 64px;
+}
+.advantages__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.advantages__block {
+  position: relative;
+  transition: all 0.3s ease;
+  outline: 1px solid #F7ECE1;
+  outline-offset: 20px;
+}
+.advantages__block:hover {
+  transform: translateY(-6px);
+}
+.advantages__block img {
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+.advantages__block-title {
+  position: absolute;
+  width: 100%;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #fff;
+  text-align: center;
+  font-size: 27px;
+  padding-top: 280px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
