@@ -259,7 +259,6 @@ body {
   font-size: 14px;
   line-height: 140%;
   color: #fff;
-  margin-top: 25px;
   color: #333;
   margin-top: 25px;
   color: #333;
@@ -285,7 +284,6 @@ body {
   font-size: 14px;
   line-height: 140%;
   color: #fff;
-  margin-top: 25px;
   color: #333;
   color: #333;
   position: relative;
@@ -300,6 +298,84 @@ body {
   width: 8px;
   height: 8px;
   background: #8d86c9;
+}
+
+.team {
+  margin-top: 150px;
+}
+.team__content {
+  height: 523px;
+  border: 1px solid red;
+}
+.team__upper {
+  display: flex;
+  justify-content: space-between;
+}
+.team__upper-title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #fff;
+  font-size: 36px;
+  color: #333;
+}
+.team__upper-button:first-child {
+  margin-right: 15px;
+}
+.team__upper-button {
+  padding-bottom: 5px;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  background: #8d86c9;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+.team__upper-button:hover {
+  transform: scale(1.08);
+}
+.team__blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+.team__block {
+  border: 1px solid #F7ECE1;
+  width: 196px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team__block-img {
+  width: 166px;
+  height: 240px;
+}
+.team__block-name {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #fff;
+  font-size: 36px;
+  color: #333;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 21px;
+  margin-top: 25px;
+}
+.team__block-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+  color: #333;
+  text-align: center;
+  margin-top: 15px;
+  width: 196px;
+  color: #333;
 }
 
 /*# sourceMappingURL=main.css.map */
