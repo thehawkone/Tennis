@@ -60,6 +60,25 @@ $font-base: 'Gilroy', sans-serif;
   transition: $what $time $type;
 }
 
+@mixin buttons {
+  padding-bottom: 5px;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  background: #8d86c9;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  @include transition(all, 0.3s, ease);
+
+  &:hover {
+    transform: scale(1.08);
+  }
+  &:first-child {
+    margin-right: 15px;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -333,7 +352,6 @@ body {
 
   &__content {
     height: 523px;
-    border: 1px solid red;
   }
 
   &__upper {
@@ -344,24 +362,9 @@ body {
       @include bold-font;
     }
 
-    &-button:first-child {
-      margin-right: 15px;
-    }
-
     &-button {
-      padding-bottom: 5px;
-      width: 45px;
-      height: 45px;
-      font-size: 25px;
-      background: #8d86c9;
-      cursor: pointer;
-      border: none;
-      border-radius: 0;
-      @include transition(all, 0.3s, ease);
+      @include buttons;
 
-      &:hover {
-        transform: scale(1.08);
-      }
     }
   }
 
@@ -398,6 +401,84 @@ body {
       margin-top: 15px;
       width: 196px;
       color: #333;
+    }
+  }
+}
+
+.services {
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+  &__content {
+    height: 455px;
+    position: relative;
+  }
+
+  &__upper {
+    display: flex;
+    align-items: center;
+
+    &-title {
+      @include bold-font;
+      margin-right: 316px;
+    }
+
+    &-second-title {
+      @include bold-font;
+    }
+
+    &-buttons {
+      margin-left: auto;
+    }
+    &-button {
+      @include buttons;
+    }
+  }
+
+  &__down {
+    &-link {
+      display: flex;
+      justify-content: space-between;
+      background: $accent-color;
+      align-items: center;
+      padding: 15px 30px;
+      width: 526px;
+      height: 60px;
+      margin-bottom: 30px;
+      @include transition(all, 0.3s, ease);
+
+      &:first-child {
+        margin-top: 73px;
+      }
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    &-button {
+      @include bold-font;
+      font-size: 21px;
+      color: #fff;
+      background: $accent-color;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-arrow {
+      font-size: 30px;
+      color: white;
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 155px;
+      margin-left: 659px;
+      width: 586px;
+      height: 270px;
+      outline: 1px solid $sub-accent-color;
+      outline-offset: 25px;
     }
   }
 }

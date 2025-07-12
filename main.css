@@ -305,7 +305,6 @@ body {
 }
 .team__content {
   height: 523px;
-  border: 1px solid red;
 }
 .team__upper {
   display: flex;
@@ -318,9 +317,6 @@ body {
   color: #fff;
   font-size: 36px;
   color: #333;
-}
-.team__upper-button:first-child {
-  margin-right: 15px;
 }
 .team__upper-button {
   padding-bottom: 5px;
@@ -335,6 +331,9 @@ body {
 }
 .team__upper-button:hover {
   transform: scale(1.08);
+}
+.team__upper-button:first-child {
+  margin-right: 15px;
 }
 .team__blocks {
   display: flex;
@@ -376,6 +375,101 @@ body {
   margin-top: 15px;
   width: 196px;
   color: #333;
+}
+
+.services {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.services__content {
+  height: 455px;
+  position: relative;
+}
+.services__upper {
+  display: flex;
+  align-items: center;
+}
+.services__upper-title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #fff;
+  font-size: 36px;
+  color: #333;
+  margin-right: 316px;
+}
+.services__upper-second-title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #fff;
+  font-size: 36px;
+  color: #333;
+}
+.services__upper-buttons {
+  margin-left: auto;
+}
+.services__upper-button {
+  padding-bottom: 5px;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  background: #8d86c9;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+.services__upper-button:hover {
+  transform: scale(1.08);
+}
+.services__upper-button:first-child {
+  margin-right: 15px;
+}
+.services__down-link {
+  display: flex;
+  justify-content: space-between;
+  background: #8D86C9;
+  align-items: center;
+  padding: 15px 30px;
+  width: 526px;
+  height: 60px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+.services__down-link:first-child {
+  margin-top: 73px;
+}
+.services__down-link:hover {
+  transform: scale(1.02);
+}
+.services__down-button {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #fff;
+  font-size: 36px;
+  color: #333;
+  font-size: 21px;
+  color: #fff;
+  background: #8D86C9;
+  border: none;
+  cursor: pointer;
+}
+.services__down-arrow {
+  font-size: 30px;
+  color: white;
+}
+.services__down-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 155px;
+  margin-left: 659px;
+  width: 586px;
+  height: 270px;
+  outline: 1px solid #F7ECE1;
+  outline-offset: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
