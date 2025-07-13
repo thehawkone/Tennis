@@ -139,7 +139,7 @@ body {
   position: relative;
   width: 315px;
   height: 151px;
-  background: #8d86c9;
+  background: #8D86C9;
 }
 .hero__block-title {
   font-weight: 400;
@@ -297,7 +297,7 @@ body {
   left: 0;
   width: 8px;
   height: 8px;
-  background: #8d86c9;
+  background: #8D86C9;
 }
 
 .team {
@@ -323,7 +323,7 @@ body {
   width: 45px;
   height: 45px;
   font-size: 25px;
-  background: #8d86c9;
+  background: #8D86C9;
   cursor: pointer;
   border: none;
   border-radius: 0;
@@ -414,7 +414,7 @@ body {
   width: 45px;
   height: 45px;
   font-size: 25px;
-  background: #8d86c9;
+  background: #8D86C9;
   cursor: pointer;
   border: none;
   border-radius: 0;
@@ -458,7 +458,7 @@ body {
 }
 .services__down-arrow {
   font-size: 30px;
-  color: white;
+  color: #fff;
 }
 .services__down-img {
   position: absolute;
@@ -470,6 +470,61 @@ body {
   height: 270px;
   outline: 1px solid #F7ECE1;
   outline-offset: 25px;
+}
+
+.footer {
+  background-color: #F7ECE1;
+  height: 96px;
+  padding-top: 30px;
+}
+.footer__content {
+  display: flex;
+  align-items: center;
+}
+.footer__copyright-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+  color: #333;
+  color: #333;
+  font-weight: 500;
+  opacity: 0.3;
+  margin-right: 104px;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+.footer__social-menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-right: 109px;
+  position: relative;
+}
+.footer__social-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+  color: #333;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.footer__social-link:hover {
+  font-weight: 700;
+  transform: translateY(-1px);
+}
+.footer__social-links {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+.footer__social-img {
+  width: 36px;
+  height: 36px;
 }
 
 /*# sourceMappingURL=main.css.map */

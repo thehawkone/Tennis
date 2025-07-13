@@ -2,6 +2,8 @@ $bg-color: #ffffff;
 $text-color: #333333;
 $accent-color: #8D86C9;
 $sub-accent-color: #F7ECE1;
+$white-color: #fff;
+$dark-color: #333;
 $font-base: 'Gilroy', sans-serif;
 
 @font-face {
@@ -39,22 +41,22 @@ $font-base: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  color: #fff;
+  color: $white-color;
 }
 @mixin title-font {
   font-weight: bold;
   font-size: 48px;
   line-height: 140%;
-  color: #fff;
+  color: $white-color;
 }
 @mixin bold-font {
   @include title-font;
   font-size: 36px;
-  color: #333;
+  color: $dark-color;
 }
 @mixin desc-font {
   @include light-font;
-  color: #333;
+  color: $dark-color;
 }
 @mixin transition($what: all, $time: 0.3s, $type: ease) {
   transition: $what $time $type;
@@ -65,7 +67,7 @@ $font-base: 'Gilroy', sans-serif;
   width: 45px;
   height: 45px;
   font-size: 25px;
-  background: #8d86c9;
+  background: $accent-color;
   cursor: pointer;
   border: none;
   border-radius: 0;
@@ -132,7 +134,7 @@ body {
 
   &__line {
     margin-top: 30px;
-    border: 1px solid #fff;
+    border: 1px solid $white-color;
     width: 100%;
     height: 0;
     opacity: 0.3;
@@ -193,7 +195,7 @@ body {
     position: relative;
     width: 315px;
     height: 151px;
-    background: #8d86c9;
+    background: $accent-color;
 
     &-title {
       @include light-font;
@@ -312,7 +314,7 @@ body {
     &-info {
       @include desc-font;
       margin-top: 25px;
-      color: #333;
+      color: $dark-color;
     }
 
     &-second-title {
@@ -329,7 +331,7 @@ body {
       }
       &-item {
         @include desc-font;
-        color: #333;
+        color: $dark-color;
         position: relative;
         padding-left: 23px;
         margin-bottom: 15px;
@@ -341,7 +343,7 @@ body {
         left: 0;
         width: 8px;
         height: 8px;
-        background: #8d86c9;
+        background: $accent-color;
       }
     }
   }
@@ -400,7 +402,7 @@ body {
       text-align: center;
       margin-top: 15px;
       width: 196px;
-      color: #333;
+      color: $dark-color;
     }
   }
 }
@@ -458,7 +460,7 @@ body {
     &-button {
       @include bold-font;
       font-size: 21px;
-      color: #fff;
+      color: $white-color;
       background: $accent-color;
       border: none;
       cursor: pointer;
@@ -466,7 +468,7 @@ body {
 
     &-arrow {
       font-size: 30px;
-      color: white;
+      color: $white-color;
     }
 
     &-img {
@@ -479,6 +481,59 @@ body {
       height: 270px;
       outline: 1px solid $sub-accent-color;
       outline-offset: 25px;
+    }
+  }
+}
+
+.footer {
+  background-color: $sub-accent-color;
+  height: 96px;
+  padding-top: 30px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__copyright-text {
+    @include desc-font;
+    color: $dark-color;
+    font-weight: 500;
+    opacity: 0.3;
+    margin-right: 104px;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+
+    &-menu {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      margin-right: 109px;
+      position: relative;
+    }
+
+    &-link {
+      @include desc-font;
+      color: $dark-color;
+      font-weight: 500;
+      @include transition(all, 0.3s, ease);
+
+      &:hover {
+        font-weight: 700;
+        transform: translateY(-1px);
+      }
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+    }
+    &-img {
+      width: 36px;
+      height: 36px;
     }
   }
 }
